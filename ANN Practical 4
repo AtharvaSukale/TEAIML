@@ -24,7 +24,7 @@ class ART:
 input_size = X.shape[1]
 rho = 2 
 alpha = 0.1 
-art = ART (input_size, rho, alpha)
+art = ART (input_size, rho, alpha, X)
 
 for x in X:
   art.learn(x)
